@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thư viện Datatable — Sách</title>
+  <!-- Gọi CSS (chúng ta sẽ điền ở bước sau) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Danh sách Sách</h1>
+    <!-- Tìm kiếm (sẽ hoạt động sau khi viết app.js) -->
+    <label for="search">Tìm kiếm:</label>
+    <input id="search" type="text" placeholder="Nhập tên/tác giả/thể loại..." />
+    <!-- Bảng: chỉ tạo khung; phần thân sẽ do JS vẽ -->
+    <table id="tbl" class="table" aria-label="Bảng sách">
+      <thead>
+        <tr>
+          <th data-col="id" scope="col" tabindex="0">ID</th>
+          <th data-col="title" scope="col" tabindex="0">Tên sách</th>
+          <th data-col="author" scope="col" tabindex="0">Tác giả</th>
+          <th data-col="year" scope="col" tabindex="0">Năm</th>
+          <th data-col="category" scope="col" tabindex="0">Thể loại</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS sẽ render nội dung vào đây -->
+      </tbody>
+    </table>
+    <!-- Vùng phân trang (ta sẽ thêm sau) -->
+    <div id="pager" class="pager" aria-label="Phân trang"></div>
+    <!-- Vùng trạng thái (tổng số, kết quả hiện tại...) -->
+    <p id="status" class="status" aria-live="polite"></p>
+    <!-- ... trên là status -->
+    <div id="status"></div>
+
+    <!-- Pager -->
+    <div class="pager">
+      <button id="btnPrev" type="button" aria-label="Trang trước">Prev</button>
+      <span id="pageIndicator"></span>
+      <button id="btnNext" type="button" aria-label="Trang sau">Next</button>
+    </div>
+  </main>
+  <!-- Gọi JS (chúng ta sẽ điền ở bước kế tiếp) -->
+  <script src="app.js"></script>
+</body>
+</html>
