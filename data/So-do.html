@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Số đỏ — Vũ Trọng Phụng | Thư viện</title>
+  <style>
+
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 24px;
+      background: #f6f7f8;
+      color: #222;
+    }
+
+    .wrapper{
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      gap: 28px;
+      background: #fff;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover {
+      width: 200px;
+    }
+    .cover img{
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .meta {
+      flex: 1;
+      padding-top: 6px;
+    }
+    .title {
+      margin: 0 0 6px 0;    
+      color: #0097A7;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .info-row {
+      display: flex;    
+      gap: 12px;
+      margin: 8px 0;
+      align-items: center;
+    }
+    .label {
+      width: 110px; 
+      color: #666;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background: #0097A7;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,151,167,0.15);
+    }
+    .btn-primary:hover {
+      background: #2e666c;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,151,167,0.15);
+    }
+    .btn-outline {
+      border: 1px solid #e0e0e0;
+      color: #666;
+    }
+    .btn-outline:hover {
+      background: #222;
+      color: #ffffff;
+    }
+
+    /* Review area */
+    .review {
+      margin-top: 22px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 13px rgb(0, 0, 0, 0.2);
+    }
+    .review-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .star {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: #0097A7;
+      color: white;
+      display:flex;
+      align-items:center; 
+      justify-content:center; 
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(0,151,167,0.12);
+    }
+    .review-title{
+      margin:0;
+      color: #0097A7;
+      font-size: 16px;
+      font-weight:700;
+    }
+    .review-content{
+      color: #2b2b2b;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="top">
+      <div class="cover">
+        <img src="img/so-do.png" alt="Bìa Số đỏ — Vũ Trọng Phụng">
+      </div>
+
+      <div class="meta">
+        <h1 class="title">Số đỏ</h1>
+        <div class="subtitle">Vũ Trọng Phụng — 1936 — Thể loại: Văn học hiện thực phê phán</div>
+
+        <div class="info-row"><div class="label">Tác giả</div><div class="value">Vũ Trọng Phụng</div></div>
+        <div class="info-row"><div class="label">Năm xuất bản</div><div class="value">1936</div></div>
+        <div class="info-row"><div class="label">Tên gốc</div><div class="value">Số đỏ</div></div>
+        <div class="info-row"><div class="label">Thể loại</div><div class="value">Tiểu thuyết hiện thực phê phán</div></div>
+        <div class="info-row"><div class="label">Ngôn ngữ</div><div class="value">Tiếng Việt</div></div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Mượn sách</a>
+          <a class="btn btn-outline" href="#">Tải về (PDF/nguồn tham khảo)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <div class="star">★</div>
+        <h2 id="review-heading" class="review-title">Giới thiệu & Review ngắn</h2>
+      </div>
+
+      <div class="review-content">
+        <p><strong>Số đỏ</strong> là tiểu thuyết nổi tiếng của <em>Vũ Trọng Phụng</em>, xuất bản lần đầu năm 1936. Tác phẩm châm biếm sâu cay xã hội thượng lưu nửa Tây nửa ta ở Hà Nội thời kỳ giao thoa văn hóa, phản ánh những thói hư tật xấu trong xã hội thực dân nửa phong kiến.</p>
+
+        <p>Nhân vật trung tâm là <em>Xuân Tóc Đỏ</em>, một kẻ vô học, lêu lổng nhưng nhờ sự tình cờ và thời thế mà trở thành nhân vật “số đỏ”, được xã hội tâng bốc. Qua đó, tác giả phơi bày sự giả dối, lố bịch của tầng lớp thị dân đương thời.</p>
+
+        <p><strong>Đặc điểm nổi bật:</strong> Giọng văn trào phúng, tình huống châm biếm sắc bén, nhân vật biếm họa nhưng lại phản ánh chân thực xã hội. Đây là một trong những tác phẩm tiêu biểu nhất của văn học hiện thực phê phán Việt Nam trước 1945.</p>
+
+        <p><strong>Gợi ý cho độc giả:</strong> Nếu bạn quan tâm đến văn học hiện thực phê phán, muốn tìm hiểu xã hội Việt Nam giai đoạn 1930–1945, thì <em>Số đỏ</em> là lựa chọn không thể bỏ qua.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

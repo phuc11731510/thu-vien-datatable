@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The C Programming Language — Kernighan & Ritchie | Thư viện</title>
+  <style>
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 24px;
+      background: #f6f7f8;
+      color: #222;
+    }
+
+    .wrapper{
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      gap: 28px;
+      background: #fff;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover {
+      width: 200px;
+    }
+    .cover img{
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .meta {
+      flex: 1;
+      padding-top: 6px;
+    }
+    .title {
+      margin: 0 0 6px 0;    
+      color: #C62828;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .info-row {
+      display: flex;    
+      gap: 12px;
+      margin: 8px 0;
+      align-items: center;
+    }
+    .label {
+      width: 110px; 
+      color: #666;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background: #C62828;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,151,167,0.15);
+    }
+    .btn-primary:hover {
+      background: #671414;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,151,167,0.15);
+    }
+    .btn-outline {
+      border: 1px solid #e0e0e0;
+      color: #666;
+    }
+    .btn-outline:hover {
+      background: #222;
+      color: #ffffff;
+    }
+
+    /* Review area */
+    .review {
+      margin-top: 22px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 13px rgb(0, 0, 0, 0.2);
+    }
+    .review-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .star {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: #C62828;
+      color: white;
+      display:flex;
+      align-items:center; 
+      justify-content:center; 
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(0,151,167,0.12);
+    }
+    .review-title{
+      margin:0;
+      color: #0097A7;
+      font-size: 16px;
+      font-weight:700;
+    }
+    .review-content{
+      color: #2b2b2b;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="top">
+      <div class="cover">
+        <img src="img/the-c-programming-language.png" alt="Bìa The C Programming Language — Kernighan & Ritchie">
+      </div>
+
+      <div class="meta">
+        <h1 class="title">The C Programming Language</h1>
+        <div class="subtitle">Brian W. Kernighan & Dennis M. Ritchie — 1978 — Thể loại: Tin học</div>
+
+        <div class="info-row"><div class="label">Tác giả</div><div class="value">Brian W. Kernighan & Dennis M. Ritchie</div></div>
+        <div class="info-row"><div class="label">Năm xuất bản</div><div class="value">1978</div></div>
+        <div class="info-row"><div class="label">Tên gốc</div><div class="value">The C Programming Language (K&R)</div></div>
+        <div class="info-row"><div class="label">Thể loại</div><div class="value">Sách tin học / Ngôn ngữ lập trình</div></div>
+        <div class="info-row"><div class="label">Ngôn ngữ</div><div class="value">Tiếng Anh</div></div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Mượn sách</a>
+          <a class="btn btn-outline" href="#">Tải về (PDF/nguồn tham khảo)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <div class="star">★</div>
+        <h2 id="review-heading" class="review-title">Giới thiệu & Review ngắn</h2>
+      </div>
+
+      <div class="review-content">
+        <p><strong>The C Programming Language</strong>, thường được gọi tắt là <em>K&R C</em>, là cuốn sách kinh điển do <em>Brian W. Kernighan</em> và <em>Dennis M. Ritchie</em> (người sáng tạo ngôn ngữ C) biên soạn, xuất bản lần đầu năm 1978.</p>
+
+        <p>Sách giới thiệu một cách có hệ thống ngôn ngữ lập trình C, từ cú pháp cơ bản đến các khái niệm nâng cao. Đây không chỉ là tài liệu học tập mà còn là chuẩn mực tham chiếu cho lập trình viên C trong nhiều thập kỷ.</p>
+
+        <p><strong>Đặc điểm nổi bật:</strong> Cách viết súc tích, rõ ràng, nhiều ví dụ minh họa thực tế; đồng thời định hình phong cách lập trình C. Cuốn sách này đã góp phần to lớn vào sự phổ biến và thành công của ngôn ngữ C.</p>
+
+        <p><strong>Gợi ý cho độc giả:</strong> Phù hợp cho sinh viên tin học, lập trình viên muốn nắm vững nền tảng C, hoặc những ai nghiên cứu lịch sử phát triển của ngôn ngữ lập trình.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

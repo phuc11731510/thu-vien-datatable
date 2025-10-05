@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Design Patterns — Gang of Four | Thư viện</title>
+  <style>
+    :root{
+      --accent: #C62828;
+      --muted: #666;
+      --bg: #f6f7f8;
+      --card: #fff;
+    }
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 24px;
+      background: var(--bg);
+      color: #222;
+    }
+
+    .wrapper{
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      gap: 28px;
+      background: var(--card);
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover {
+      width: 200px;
+    }
+    .cover img{
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .meta {
+      flex: 1;
+      padding-top: 6px;
+    }
+    .title {
+      margin: 0 0 6px 0;    
+      color: var(--accent);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .info-row {
+      display: flex;    
+      gap: 12px;
+      margin: 8px 0;
+      align-items: center;
+    }
+    .label {
+      width: 110px; 
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 4px 10px rgba(198,40,40,0.2);
+    }
+    .btn-primary:hover {
+      background: #8E1B1B;
+      color: white;
+    }
+    .btn-outline {
+      border: 1px solid #e0e0e0;
+      color: #666;
+    }
+    .btn-outline:hover {
+      background: #222;
+      color: #ffffff;
+    }
+
+    /* Review area */
+    .review {
+      margin-top: 22px;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 13px rgb(0, 0, 0, 0.2);
+    }
+    .review-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .star {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      display:flex;
+      align-items:center; 
+      justify-content:center; 
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(198,40,40,0.15);
+    }
+    .review-title{
+      margin:0;
+      color: var(--accent);
+      font-size: 16px;
+      font-weight:700;
+    }
+    .review-content{
+      color: #2b2b2b;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="top">
+      <div class="cover">
+        <img src="img/design-patterns.png" alt="Bìa Design Patterns — Gang of Four">
+      </div>
+
+      <div class="meta">
+        <h1 class="title">Design Patterns: Elements of Reusable Object-Oriented Software</h1>
+        <div class="subtitle">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides — 1994 — Thể loại: Tin học</div>
+
+        <div class="info-row"><div class="label">Tác giả</div><div class="value">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</div></div>
+        <div class="info-row"><div class="label">Năm xuất bản</div><div class="value">1994</div></div>
+        <div class="info-row"><div class="label">Thể loại</div><div class="value">Tin học / Thiết kế phần mềm</div></div>
+        <div class="info-row"><div class="label">Biệt danh</div><div class="value">Gang of Four (GoF)</div></div>
+        <div class="info-row"><div class="label">Ngôn ngữ</div><div class="value">Tiếng Anh (bản dịch có sẵn)</div></div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Mượn sách</a>
+          <a class="btn btn-outline" href="#">Tải về (PDF/nguồn tham khảo)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <div class="star">★</div>
+        <h2 id="review-heading" class="review-title">Giới thiệu & Review chi tiết</h2>
+      </div>
+
+      <div class="review-content">
+        <p><strong>Design Patterns</strong> được viết bởi bốn tác giả nổi tiếng — Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (thường gọi là <em>Gang of Four</em>) và xuất bản năm 1994. Cuốn sách này đã đặt nền móng cho lĩnh vực thiết kế phần mềm hiện đại.</p>
+
+        <p>Sách giới thiệu 23 mẫu thiết kế (design patterns) cơ bản, được chia thành ba nhóm chính: <em>Creational</em> (tạo lập đối tượng), <em>Structural</em> (cấu trúc), và <em>Behavioral</em> (hành vi). Những mẫu thiết kế này giúp lập trình viên giải quyết các vấn đề thường gặp trong phát triển phần mềm theo hướng đối tượng một cách hiệu quả, tái sử dụng được và dễ mở rộng.</p>
+
+        <p><strong>Đặc điểm nổi bật:</strong>  
+        Là tác phẩm tiên phong, chuẩn hóa khái niệm “design pattern” trong lập trình.  
+        Giúp lập trình viên học cách tư duy ở mức trừu tượng cao hơn, không chỉ tập trung vào code mà còn vào cấu trúc tổng thể.  
+        Các ví dụ minh họa rõ ràng, vẫn còn nguyên giá trị sau gần 30 năm.  
+        Là tài liệu bắt buộc trong nhiều khóa học Khoa học Máy tính trên thế giới.</p>
+
+        <p><strong>Gợi ý cho độc giả:</strong>  
+        Đây là cuốn sách không thể thiếu đối với lập trình viên hướng đối tượng, đặc biệt là Java, C++, C#. Nó phù hợp cho cả sinh viên CNTT và các kỹ sư phần mềm muốn viết mã có khả năng tái sử dụng, dễ bảo trì, và bền vững theo thời gian.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

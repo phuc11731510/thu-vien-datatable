@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Introduction to the Theory of Computation — Michael Sipser | Thư viện</title>
+  <style>
+    :root{
+      --accent: #C62828;
+      --muted: #666;
+      --bg: #f6f7f8;
+      --card: #fff;
+    }
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 24px;
+      background: var(--bg);
+      color: #222;
+    }
+
+    .wrapper{
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      gap: 28px;
+      background: var(--card);
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover {
+      width: 200px;
+    }
+    .cover img{
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .meta {
+      flex: 1;
+      padding-top: 6px;
+    }
+    .title {
+      margin: 0 0 6px 0;    
+      color: var(--accent);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .info-row {
+      display: flex;    
+      gap: 12px;
+      margin: 8px 0;
+      align-items: center;
+    }
+    .label {
+      width: 110px; 
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 4px 10px rgba(198,40,40,0.2);
+    }
+    .btn-primary:hover {
+      background: #8E1B1B;
+      color: white;
+    }
+    .btn-outline {
+      border: 1px solid #e0e0e0;
+      color: #666;
+    }
+    .btn-outline:hover {
+      background: #222;
+      color: #ffffff;
+    }
+
+    /* Review area */
+    .review {
+      margin-top: 22px;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 13px rgb(0, 0, 0, 0.2);
+    }
+    .review-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .star {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      display:flex;
+      align-items:center; 
+      justify-content:center; 
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(198,40,40,0.15);
+    }
+    .review-title{
+      margin:0;
+      color: var(--accent);
+      font-size: 16px;
+      font-weight:700;
+    }
+    .review-content{
+      color: #2b2b2b;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="top">
+      <div class="cover">
+        <img src="img/theory-computation.png" alt="Bìa Introduction to the Theory of Computation — Michael Sipser">
+      </div>
+
+      <div class="meta">
+        <h1 class="title">Introduction to the Theory of Computation</h1>
+        <div class="subtitle">Michael Sipser — 1997 — Thể loại: Tin học / Khoa học máy tính</div>
+
+        <div class="info-row"><div class="label">Tác giả</div><div class="value">Michael Sipser</div></div>
+        <div class="info-row"><div class="label">Năm xuất bản</div><div class="value">1997</div></div>
+        <div class="info-row"><div class="label">Thể loại</div><div class="value">Tin học / Lý thuyết tính toán</div></div>
+        <div class="info-row"><div class="label">Ngôn ngữ</div><div class="value">Tiếng Anh</div></div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Mượn sách</a>
+          <a class="btn btn-outline" href="#">Tải về (PDF/nguồn tham khảo)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <div class="star">★</div>
+        <h2 id="review-heading" class="review-title">Giới thiệu & Review chi tiết</h2>
+      </div>
+
+      <div class="review-content">
+        <p><strong>Introduction to the Theory of Computation</strong> của <em>Michael Sipser</em>, xuất bản lần đầu năm 1997, là một trong những giáo trình kinh điển về khoa học máy tính lý thuyết. Cuốn sách này được sử dụng rộng rãi trong các trường đại học hàng đầu để giảng dạy về lý thuyết tính toán.</p>
+
+        <p>Sách tập trung vào ba mảng chính:  
+        <strong>Automata và Ngôn ngữ hình thức</strong>: giới thiệu các mô hình máy tính trừu tượng như DFA, NFA, PDA và mối quan hệ với ngôn ngữ chính quy và ngữ cảnh tự do.<br>
+        <strong>Computability Theory</strong>: nghiên cứu về những gì có thể hoặc không thể tính toán được (Turing machines, undecidability, halting problem).<br>
+        <strong>Complexity Theory</strong>: phân tích độ phức tạp thuật toán, các lớp P, NP, NP-complete và ý nghĩa của giả thuyết P ≠ NP.</p>
+
+        <p><strong>Điểm nổi bật:</strong><br>
+        Cách viết súc tích, dễ tiếp cận với nhiều ví dụ minh họa rõ ràng.<br>
+        Cân bằng giữa sự nghiêm túc toán học và khả năng giảng giải trực quan.<br>
+        Là tài liệu tham khảo nền tảng cho các nghiên cứu nâng cao trong khoa học máy tính.</p>
+       <p><strong>Gợi ý cho độc giả:</strong>  
+        
+        Cuốn sách phù hợp cho sinh viên ngành khoa học máy tính, kỹ sư phần mềm muốn hiểu rõ cơ sở lý thuyết, cũng như những ai quan tâm đến ranh giới của cái gì có thể được tính toán bằng máy tính.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

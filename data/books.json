@@ -1,0 +1,182 @@
+[
+  {
+    "id": 14,
+    "title": "Artificial Intelligence: A Modern Approach — Russell & Norvig",
+    "author": "Stuart Russell, Peter Norvig",
+    "year": 1995,
+    "category": "Tin học / Artificial Intelligence",
+    "cover": "data/img/artificial-intelligence.png",
+    "buy": "data/Artificial-intelligence.html"
+  },
+  {
+    "id": 20,
+    "title": "Chí Phèo — Nam Cao",
+    "author": "Nam Cao",
+    "year": 1941,
+    "category": "Truyện ngắn hiện thực phê phán",
+    "cover": "data/img/chi-pheo.png",
+    "buy": "data/Chi-pheo.html"
+  },
+  {
+    "id": 13,
+    "title": "Clean Code — Robert C. Martin",
+    "author": "Robert C. Martin",
+    "year": 2008,
+    "category": "Tin học / Lập trình phần mềm",
+    "cover": "data/img/clean-code.png",
+    "buy": "data/Clean-code.html"
+  },
+  {
+    "id": 12,
+    "title": "Code Complete — Steve McConnell",
+    "author": "Steve McConnell",
+    "year": 1993,
+    "category": "Tin học / Lập trình phần mềm",
+    "cover": "data/img/code-complete.png",
+    "buy": "data/Code-completed.html"
+  },
+  {
+    "id": 11,
+    "title": "Design Patterns — Gang of Four",
+    "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+    "year": 1994,
+    "category": "Tin học / Thiết kế phần mềm",
+    "cover": "data/img/design-patterns.png",
+    "buy": "data/Design-patterns.html"
+  },
+  {
+    "id": 16,
+    "title": "Dune — Frank Herbert",
+    "author": "Frank Herbert",
+    "year": 1965,
+    "category": "Tiểu thuyết khoa học viễn tưởng",
+    "cover": "data/img/dune.png",
+    "buy": "data/Dune.html"
+  },
+  {
+    "id": 17,
+    "title": "Foundation — Isaac Asimov",
+    "author": "Isaac Asimov",
+    "year": 1951,
+    "category": "Tiểu thuyết khoa học viễn tưởng",
+    "cover": "data/img/foundation.png",
+    "buy": "data/Foundation.html"
+  },
+  {
+    "id": 3,
+    "title": "Introduction to the Theory of Computation — Michael Sipser",
+    "author": "Michael Sipser",
+    "year": 1997,
+    "category": "Tin học / Lý thuyết tính toán",
+    "cover": "data/img/theory-computation.png",
+    "buy": "data/Theory-computation.html"
+  },
+  {
+    "id": 10,
+    "title": "JavaScript: The Good Parts — Douglas Crockford",
+    "author": "Douglas Crockford",
+    "year": 2008,
+    "category": "Tin học / JavaScript",
+    "cover": "data/img/javascript-good-parts.png",
+    "buy": "data/Javascript-good-parts.html"
+  },
+  {
+    "id": 18,
+    "title": "Neuromancer — William Gibson",
+    "author": "William Gibson",
+    "year": 1984,
+    "category": "Tiểu thuyết khoa học viễn tưởng / Cyberpunk",
+    "cover": "data/img/neuromancer.png",
+    "buy": "data/Neuromancer.html"
+  },
+  {
+    "id": 9,
+    "title": "Nỗi buồn chiến tranh — Bảo Ninh",
+    "author": "Bảo Ninh",
+    "year": 1990,
+    "category": "Tiểu thuyết hiện đại, Văn học chiến tranh",
+    "cover": "data/img/noi-buon-chien-tranh.png",
+    "buy": "data/Noi-buon-chien-tranh.html"
+  },
+  {
+    "id": 8,
+    "title": "Python Crash Course — Eric Matthes",
+    "author": "Eric Matthes",
+    "year": 2015,
+    "category": "Tin học / Python",
+    "cover": "data/img/python-crash-course.png",
+    "buy": "data/Python-crash-course.html"
+  },
+  {
+    "id": 7,
+    "title": "Refactoring — Martin Fowler",
+    "author": "Martin Fowler",
+    "year": 1999,
+    "category": "Tin học / Thiết kế & phát triển phần mềm",
+    "cover": "data/img/refactoring.png",
+    "buy": "data/Refactoring.html"
+  },
+  {
+    "id": 15,
+    "title": "Snow Crash — Neal Stephenson",
+    "author": "Neal Stephenson",
+    "year": 1992,
+    "category": "Tiểu thuyết khoa học viễn tưởng, cyberpunk",
+    "cover": "data/img/snow-crash.png",
+    "buy": "data/Snow-crash.html"
+  },
+  {
+    "id": 6,
+    "title": "Số đỏ — Vũ Trọng Phụng",
+    "author": "Vũ Trọng Phụng",
+    "year": 1936,
+    "category": "Tiểu thuyết hiện thực phê phán",
+    "cover": "data/img/so-do.png",
+    "buy": "data/So-do.html"
+  },
+  {
+    "id": 5,
+    "title": "The C Programming Language — Kernighan & Ritchie",
+    "author": "Brian W. Kernighan & Dennis M. Ritchie",
+    "year": 1978,
+    "category": "Sách tin học / Ngôn ngữ lập trình",
+    "cover": "data/img/the-c-programming-language.png",
+    "buy": "data/The-C-Programming-Language.html"
+  },
+  {
+    "id": 4,
+    "title": "The Martian — Andy Weir",
+    "author": "Andy Weir",
+    "year": 2011,
+    "category": "Tiểu thuyết khoa học viễn tưởng",
+    "cover": "data/img/the-martian.png",
+    "buy": "data/The-martian.html"
+  },
+  {
+    "id": 2,
+    "title": "Truyện Kiều — Nguyễn Du",
+    "author": "Nguyễn Du",
+    "year": "",
+    "category": "Truyện thơ Nôm — Văn học",
+    "cover": "data/img/truyen-kieu.png",
+    "buy": "data/Truyen-kieu.html"
+  },
+  {
+    "id": 1,
+    "title": "You Don’t Know JS — Kyle Simpson",
+    "author": "Kyle Simpson",
+    "year": 2014,
+    "category": "Tin học / Lập trình JavaScript",
+    "cover": "data/img/you-dont-know-js.png",
+    "buy": "data/You-dont-know-js.html"
+  },
+  {
+    "id": 19,
+    "title": "Đất rừng phương Nam — Đoàn Giỏi",
+    "author": "Đoàn Giỏi",
+    "year": 1957,
+    "category": "Tiểu thuyết — Văn học",
+    "cover": "data/img/dat-rung-phuong-nam.png",
+    "buy": "data/Dat-rung-phuong-nam.html"
+  }
+]

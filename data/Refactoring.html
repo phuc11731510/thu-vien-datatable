@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Refactoring — Martin Fowler | Thư viện</title>
+  <style>
+    :root{
+      --accent: #C62828;
+      --muted: #666;
+      --bg: #f6f7f8;
+      --card: #fff;
+    }
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 24px;
+      background: var(--bg);
+      color: #222;
+    }
+
+    .wrapper{
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      gap: 28px;
+      background: var(--card);
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover {
+      width: 200px;
+    }
+    .cover img{
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .meta {
+      flex: 1;
+      padding-top: 6px;
+    }
+    .title {
+      margin: 0 0 6px 0;    
+      color: var(--accent);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .info-row {
+      display: flex;    
+      gap: 12px;
+      margin: 8px 0;
+      align-items: center;
+    }
+    .label {
+      width: 110px; 
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 4px 10px rgba(198,40,40,0.2);
+    }
+    .btn-primary:hover {
+      background: #8E1B1B;
+      color: white;
+    }
+    .btn-outline {
+      border: 1px solid #e0e0e0;
+      color: #666;
+    }
+    .btn-outline:hover {
+      background: #222;
+      color: #ffffff;
+    }
+
+    /* Review area */
+    .review {
+      margin-top: 22px;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 13px rgb(0, 0, 0, 0.2);
+    }
+    .review-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .star {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      display:flex;
+      align-items:center; 
+      justify-content:center; 
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(198,40,40,0.15);
+    }
+    .review-title{
+      margin:0;
+      color: var(--accent);
+      font-size: 16px;
+      font-weight:700;
+    }
+    .review-content{
+      color: #2b2b2b;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="top">
+      <div class="cover">
+        <img src="img/refactoring.png" alt="Bìa Refactoring — Martin Fowler">
+      </div>
+
+      <div class="meta">
+        <h1 class="title">Refactoring: Improving the Design of Existing Code</h1>
+        <div class="subtitle">Martin Fowler — 1999 — Thể loại: Tin học / Kỹ thuật phần mềm</div>
+
+        <div class="info-row"><div class="label">Tác giả</div><div class="value">Martin Fowler</div></div>
+        <div class="info-row"><div class="label">Năm xuất bản</div><div class="value">1999</div></div>
+        <div class="info-row"><div class="label">Thể loại</div><div class="value">Tin học / Thiết kế & phát triển phần mềm</div></div>
+        <div class="info-row"><div class="label">Ngôn ngữ</div><div class="value">Tiếng Anh (có bản dịch tiếng Việt)</div></div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Mượn sách</a>
+          <a class="btn btn-outline" href="#">Tải về (PDF/nguồn tham khảo)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <div class="star">★</div>
+        <h2 id="review-heading" class="review-title">Giới thiệu & Review chi tiết</h2>
+      </div>
+
+      <div class="review-content">
+        <p><strong>Refactoring: Improving the Design of Existing Code</strong> của <em>Martin Fowler</em>, xuất bản năm 1999, là một trong những cuốn sách quan trọng nhất trong lĩnh vực phát triển phần mềm. Nó giới thiệu hệ thống phương pháp <em>refactoring</em> — chỉnh sửa và cải tiến mã nguồn mà không thay đổi chức năng bên ngoài.</p>
+
+        <p>Sách đưa ra hàng chục kỹ thuật refactoring phổ biến, được minh họa bằng ví dụ cụ thể trong ngôn ngữ Java. Mỗi kỹ thuật đều được mô tả mục đích, cách áp dụng, dấu hiệu nhận biết khi cần refactor, và tác động đến thiết kế tổng thể. Đây là tài liệu nền tảng cho việc viết code “sạch” và dễ bảo trì.</p>
+
+        <p><strong>Đặc điểm nổi bật:</strong><br>
+        Hệ thống hóa hơn 70 kỹ thuật refactoring thực tiễn.<br>
+        Minh họa bằng code và sơ đồ UML rõ ràng.<br>
+        Giúp phát hiện và loại bỏ “mùi code” (code smells).<br>
+        Tư duy thiết kế hướng đến sự linh hoạt, tái sử dụng và bảo trì lâu dài.</p>
+
+        <p><strong>Gợi ý cho độc giả:</strong>  
+        Cuốn sách này phù hợp với lập trình viên ở mọi cấp độ. Đặc biệt hữu ích cho những ai đang làm việc trong các dự án dài hạn, cần cải thiện chất lượng code, hoặc muốn học cách viết code “sạch” và dễ phát triển thêm tính năng mà không tạo ra nợ kỹ thuật.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

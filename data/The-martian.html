@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Martian — Andy Weir | Thư viện</title>
+  <style>
+    :root{
+      --accent: #FFD54F;
+    }
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 24px;
+      background: #f6f7f8;
+      color: #222;
+    }
+
+    .wrapper{
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      gap: 28px;
+      background: #fff;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover {
+      width: 200px;
+    }
+    .cover img{
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .meta {
+      flex: 1;
+      padding-top: 6px;
+    }
+    .title {
+      margin: 0 0 6px 0;    
+      color: var(--accent);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .info-row {
+      display: flex;    
+      gap: 12px;
+      margin: 8px 0;
+      align-items: center;
+    }
+    .label {
+      width: 110px; 
+      color: #666;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .btn-primary:hover {
+      background: #d4a73b;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .btn-outline {
+      border: 1px solid #e0e0e0;
+      color: #666;
+    }
+    .btn-outline:hover {
+      background: #222;
+      color: #ffffff;
+    }
+
+    /* Review area */
+    .review {
+      margin-top: 22px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 13px rgb(0, 0, 0, 0.2);
+    }
+    .review-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .star {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      display:flex;
+      align-items:center; 
+      justify-content:center; 
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    }
+    .review-title{
+      margin:0;
+      color: var(--accent);
+      font-size: 16px;
+      font-weight:700;
+    }
+    .review-content{
+      color: #2b2b2b;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="top">
+      <div class="cover">
+        <img src="img/the-martian.png" alt="Bìa The Martian — Andy Weir">
+      </div>
+
+      <div class="meta">
+        <h1 class="title">The Martian</h1>
+        <div class="subtitle">Andy Weir — 2011 — Thể loại: Khoa học viễn tưởng</div>
+
+        <div class="info-row"><div class="label">Tác giả</div><div class="value">Andy Weir</div></div>
+        <div class="info-row"><div class="label">Năm xuất bản</div><div class="value">2011</div></div>
+        <div class="info-row"><div class="label">Tên gốc</div><div class="value">The Martian</div></div>
+        <div class="info-row"><div class="label">Thể loại</div><div class="value">Tiểu thuyết khoa học viễn tưởng</div></div>
+        <div class="info-row"><div class="label">Ngôn ngữ</div><div class="value">Tiếng Anh</div></div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Mượn sách</a>
+          <a class="btn btn-outline" href="#">Tải về (PDF/nguồn tham khảo)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <div class="star">★</div>
+        <h2 id="review-heading" class="review-title">Giới thiệu & Review ngắn</h2>
+      </div>
+
+      <div class="review-content">
+        <p><strong>The Martian</strong> là tiểu thuyết khoa học viễn tưởng của <em>Andy Weir</em>, xuất bản năm 2011. Tác phẩm nhanh chóng trở thành hiện tượng toàn cầu nhờ cốt truyện hấp dẫn và tính khoa học chặt chẽ.</p>
+
+        <p>Câu chuyện xoay quanh <em>Mark Watney</em>, một phi hành gia bị bỏ lại trên sao Hỏa sau một tai nạn. Với sự thông minh, óc sáng tạo và kiến thức khoa học, anh đã tìm mọi cách để sinh tồn trong môi trường khắc nghiệt, từ việc trồng khoai tây cho đến liên lạc với Trái Đất.</p>
+
+        <p><strong>Điểm nổi bật:</strong> Sự kết hợp giữa yếu tố khoa học chính xác và kịch tính sinh tồn, cùng với giọng văn hài hước đã khiến <em>The Martian</em> không chỉ lôi cuốn người yêu thích khoa học viễn tưởng mà còn tiếp cận được đông đảo độc giả phổ thông.</p>
+
+        <p><strong>Gợi ý cho độc giả:</strong> Đây là cuốn sách lý tưởng cho những ai yêu thích đề tài vũ trụ, khoa học ứng dụng và tinh thần con người trước nghịch cảnh. Tác phẩm cũng đã được chuyển thể thành bộ phim nổi tiếng năm 2015 do Ridley Scott đạo diễn.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

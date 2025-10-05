@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neuromancer — William Gibson | Thư viện</title>
+  <style>
+    :root{
+      --accent: #FBC02D;
+    }
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 24px;
+      background: #f6f7f8;
+      color: #222;
+    }
+
+    .wrapper{
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      gap: 28px;
+      background: #fff;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover {
+      width: 200px;
+    }
+    .cover img{
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);
+    }
+
+    .meta {
+      flex: 1;
+      padding-top: 6px;
+    }
+    .title {
+      margin: 0 0 6px 0;    
+      color: var(--accent);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #333;
+      font-size: 15px;
+    }
+
+    .info-row {
+      display: flex;    
+      gap: 12px;
+      margin: 8px 0;
+      align-items: center;
+    }
+    .label {
+      width: 110px; 
+      color: #666;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .actions {
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 4px 10px rgba(251,192,45,0.2);
+    }
+    .btn-primary:hover {
+      background: #F57F17;
+      color: white;
+      box-shadow: 0 4px 10px rgba(245,127,23,0.3);
+    }
+    .btn-outline {
+      border: 1px solid #e0e0e0;
+      color: #666;
+    }
+    .btn-outline:hover {
+      background: #222;
+      color: #ffffff;
+    }
+
+    /* Review area */
+    .review {
+      margin-top: 22px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 13px rgb(0, 0, 0, 0.2);
+    }
+    .review-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .star {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      display:flex;
+      align-items:center; 
+      justify-content:center; 
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(251,192,45,0.2);
+    }
+    .review-title{
+      margin:0;
+      color: var(--accent);
+      font-size: 16px;
+      font-weight:700;
+    }
+    .review-content{
+      color: #2b2b2b;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="top">
+      <div class="cover">
+        <img src="img/neuromancer.png" alt="Bìa Neuromancer — William Gibson">
+      </div>
+
+      <div class="meta">
+        <h1 class="title">Neuromancer</h1>
+        <div class="subtitle">William Gibson — 1984 — Thể loại: Khoa học viễn tưởng</div>
+
+        <div class="info-row"><div class="label">Tác giả</div><div class="value">William Gibson</div></div>
+        <div class="info-row"><div class="label">Năm xuất bản</div><div class="value">1984</div></div>
+        <div class="info-row"><div class="label">Tên gốc</div><div class="value">Neuromancer</div></div>
+        <div class="info-row"><div class="label">Thể loại</div><div class="value">Tiểu thuyết khoa học viễn tưởng / Cyberpunk</div></div>
+        <div class="info-row"><div class="label">Ngôn ngữ</div><div class="value">Tiếng Anh</div></div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Mượn sách</a>
+          <a class="btn btn-outline" href="#">Tải về (PDF/nguồn tham khảo)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <div class="star">★</div>
+        <h2 id="review-heading" class="review-title">Giới thiệu & Review ngắn</h2>
+      </div>
+
+      <div class="review-content">
+        <p><strong>Neuromancer</strong> là tiểu thuyết khoa học viễn tưởng kinh điển của <em>William Gibson</em>, xuất bản năm 1984. Tác phẩm này đã đặt nền móng cho thể loại <em>cyberpunk</em>, ảnh hưởng sâu rộng đến văn hóa đại chúng, điện ảnh và cả cách chúng ta hình dung về không gian mạng (cyberspace).</p>
+
+        <p>Câu chuyện xoay quanh Case, một hacker sa ngã, được thuê cho một nhiệm vụ nguy hiểm trong thế giới ngầm của trí tuệ nhân tạo, tập đoàn quyền lực và thực tại ảo. <em>Neuromancer</em> giới thiệu khái niệm “ma trận” — một không gian ảo nơi con người kết nối trí não với máy tính.</p>
+
+        <p><strong>Đặc điểm nổi bật:</strong> Không khí u ám, hiện đại của cyberpunk; miêu tả sống động về công nghệ, AI và xã hội tương lai; văn phong giàu hình ảnh, tạo cảm giác vừa bí ẩn vừa bùng nổ.</p>
+
+        <p><strong>Gợi ý cho độc giả:</strong> Đây là tác phẩm không thể bỏ qua cho những ai muốn khám phá nguồn gốc của cyberpunk và các ý tưởng về AI, thực tại ảo. Nếu bạn thích <em>Blade Runner</em> hoặc <em>The Matrix</em>, <em>Neuromancer</em> là lựa chọn hoàn hảo.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

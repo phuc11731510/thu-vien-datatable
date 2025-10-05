@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>You Don’t Know JS — Kyle Simpson | Thư viện</title>
+  <style>
+    :root{
+      --accent: #C62828;
+      --muted: #666;
+      --bg: #f6f7f8;
+      --card: #fff;
+    }
+    body{
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 24px;
+      background: var(--bg);
+      color: #222;
+    }
+    .wrapper{
+      max-width: 1100px;
+      margin: auto;
+    }
+    .top {
+      display: flex;
+      gap: 28px;
+      background: var(--card);
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+    }
+    .cover {
+      width: 200px;
+    }
+    .cover img{
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);
+    }
+    .meta {
+      flex: 1;
+      padding-top: 6px;
+    }
+    .title {
+      margin: 0 0 6px 0;    
+      color: var(--accent);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #333;
+      font-size: 15px;
+    }
+    .info-row {
+      display: flex;    
+      gap: 12px;
+      margin: 8px 0;
+      align-items: center;
+    }
+    .label {
+      width: 110px; 
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      font-size: 14px;
+    }
+    .actions {
+      margin-top: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 4px 10px rgba(198,40,40,0.2);
+    }
+    .btn-primary:hover {
+      background: #8E1B1B;
+      color: white;
+    }
+    .btn-outline {
+      border: 1px solid #e0e0e0;
+      color: #666;
+    }
+    .btn-outline:hover {
+      background: #222;
+      color: #ffffff;
+    }
+    .review {
+      margin-top: 22px;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 13px rgb(0, 0, 0, 0.2);
+    }
+    .review-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .star {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      display:flex;
+      align-items:center; 
+      justify-content:center; 
+      font-weight:700;
+      box-shadow: 0 6px 12px rgba(198,40,40,0.15);
+    }
+    .review-title{
+      margin:0;
+      color: var(--accent);
+      font-size: 16px;
+      font-weight:700;
+    }
+    .review-content{
+      color: #2b2b2b;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="top">
+      <div class="cover">
+        <img src="img/you-dont-know-js.png" alt="Bìa You Don’t Know JS — Kyle Simpson">
+      </div>
+
+      <div class="meta">
+        <h1 class="title">You Don’t Know JS (series)</h1>
+        <div class="subtitle">Kyle Simpson — 2014 — Thể loại: Tin học / JavaScript</div>
+
+        <div class="info-row"><div class="label">Tác giả</div><div class="value">Kyle Simpson</div></div>
+        <div class="info-row"><div class="label">Năm xuất bản</div><div class="value">2014</div></div>
+        <div class="info-row"><div class="label">Thể loại</div><div class="value">Tin học / Lập trình JavaScript</div></div>
+        <div class="info-row"><div class="label">Ngôn ngữ</div><div class="value">Tiếng Anh</div></div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Mượn sách</a>
+          <a class="btn btn-outline" href="#">Tải về (PDF/nguồn tham khảo)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <div class="star">★</div>
+        <h2 class="review-title">Giới thiệu & Review chi tiết</h2>
+      </div>
+
+      <div class="review-content">
+        <p><strong>You Don’t Know JS (YDKJS)</strong> là một bộ sách nổi tiếng của <em>Kyle Simpson</em>, ra mắt lần đầu từ năm 2014. Bộ sách gồm nhiều tập, mỗi tập chuyên sâu vào một khía cạnh của JavaScript mà nhiều lập trình viên thường bỏ qua hoặc hiểu sai.</p>
+
+        <p><strong>Nội dung chính:</strong><br>
+        Giải thích cặn kẽ cơ chế hoạt động bên trong của JavaScript.<br>
+        Các chủ đề phức tạp như scope, closure, hoisting, this & object prototypes, asynchronous & promises.<br>
+        Cách viết mã JavaScript rõ ràng, đúng bản chất ngôn ngữ thay vì dựa vào thói quen hoặc framework.</p>
+
+        <p><strong>Điểm nổi bật:</strong><br>
+        Không chỉ dạy “cách dùng” mà đi sâu vào “vì sao” JavaScript hoạt động như vậy.<br>
+        Viết súc tích, dễ đọc, nhưng yêu cầu người đọc phải có tư duy phân tích.<br>
+        Được cộng đồng lập trình đánh giá là một trong những bộ sách hay nhất để hiểu sâu JavaScript.</p>
+
+        <p><strong>Gợi ý cho độc giả:</strong>  
+        Bộ sách này phù hợp với lập trình viên đã có căn bản JavaScript, muốn nâng cao hiểu biết và sử dụng JS một cách chính xác, hiệu quả hơn. Đây là tài liệu không thể thiếu nếu bạn muốn trở thành chuyên gia về JavaScript.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
