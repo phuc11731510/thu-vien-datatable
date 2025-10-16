@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Thư viện Datatable — Sách</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.2.0/css/dataTables.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.addon.css?v=4">
+</head>
+  <body>
+    <main class="container">
+      <h1>Danh sách Sách</h1>
+      <section class="card" aria-labelledby="search-label" style="margin-bottom:16px;">
+        <label id="search-label" for="search" class="sr-only">Tìm kiếm</label>
+        <input id="search" type="text" placeholder="Nhập tên/tác giả/thể loại..." aria-describedby="search-help"/>
+        <p id="search-help" class="status" aria-live="polite" style="margin:8px 0 0;">Gõ để lọc kết quả theo từ khoá.</p>
+      </section>
+      <section class="card" aria-label="Bảng sách">
+        <table id="tbl" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Tên sách</th>
+              <th scope="col">Tác giả</th>
+              <th scope="col">Năm</th>
+              <th scope="col">Thể loại</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.0/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js"></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
